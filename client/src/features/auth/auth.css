@@ -1,0 +1,147 @@
+:root{
+    --main-color: #A033FE;
+    --blue-color :#0A7CFF;
+    --black-color:#777;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.big__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    padding: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.8);
+
+}
+
+.container h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-weight:400;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.container input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    color: #777;
+}
+.container input:focus {
+    border: 1px solid #777;
+}
+
+.container button {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 14px;
+    outline: none;
+    font-size: 20px;
+    background-color:var(--blue-color);
+    color: #fff;
+    cursor: pointer;
+    align-self: center;
+}
+
+.container button:hover {
+    background-color: #666;
+}
+
+.container p {
+    text-align: center;
+    color: #777;
+}
+
+.container a {
+    color: #777;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+
+}
+
+.container .solo{
+
+    margin-top: 10px;
+    gap: 10px;
+    text-align: center;
+    color: #777;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+}
+
+#me {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container .loading_activate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .loading {
+    display: none;
+}
+.container .loading_circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #777;
+    border-top-color: #0A7CFF;
+    animation: loading 4s infinite linear;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.logo{
+    margin-bottom: 20px;
+}
